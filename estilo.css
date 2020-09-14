@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap')
+html, body {
+    margin: 1px;
+}
+header{
+    background-color: rgb(78, 170, 245);
+    color: white;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo{
+    width: 90px;
+    position: absolute;
+    top: 10px;
+    margin-left: 3%;
+}
+#menu{
+    float: right;
+    margin-right: 3%;
+    list-style: none;
+    margin-top: 0px;
+}
+li{
+    float: left;
+    padding: 10 5 10 5;
+}
+li:hover{
+    background-color: rgb(107, 219, 247);
+}
+#imagen-fundo{
+    background:  url("img/energiasolar.jpg");
+    height: 90%;
+    text-align: center;
+}
+#titulo{
+    color: black;
+    padding-top: 22%;
+    font-size: 59px;
+    line-height: 0.6;
+    font-family: 'Anton', sans-serif;
+}
+#subtitulo{
+    color: black;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-shadow:   0.2cm black;
+}
+#acao{
+    font: 22%;
+    color: black;
+    border: 1px red solid;
+    padding: 10px 20px 10px 20px ;
+}
+.icone{
+    width: 55px;
+}
+section{
+    padding: 22px;
+    float: left;
+    margin-top: 10px;
+}
+.destaque{
+    background-color: rgb(184, 234, 253);
+
+}
+.imgemalt{
+    width: 90%;
+    height: 30%;
+}
+.coluna{
+    top: 22px;
+    float: left;
+    padding: 0  5%;
+    position: relative;
+    
+}
+.dois{
+    width: 40%;
+}
+.quatro{
+    width: 15%;
+}
+.tres{
+    width: 29%;
+    padding: 0 2%;
+}
+.justificado{
+    text-align: justify;
+}
+.centralizado{
+    text-align: center;
+}
+#sobre{
+    width: 97%;
+    
+}
+footer{
+    background-color: rgb(78, 170, 245);
+    float: center;
+}
+@media all and (max-width:768px){
+    #menu{
+        visibility: hidden;
+    }
+    .coluna,.dois,.tres,.quatro{
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+    #logo2{
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+    #logo{
+        margin-left: 0px;
+        transform: translateX(-60%);
+    }
+}
